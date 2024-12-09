@@ -22,7 +22,7 @@
     "jsx-quotes": ["error", "prefer-single"],
     "no-trailing-spaces": "error",
     "indent": ["error", 2],
-    "react/prop-types": "warn",
+    "react/prop-types": 0,
     "react/no-deprecated": "error",
     "react/no-direct-mutation-state": "error",
     "react/no-typos": "error",
@@ -41,7 +41,6 @@
     "object-curly-spacing": ["error", "always"],
     "no-var": "error",
     "prefer-const": "error",
-    "quote-props": ["error", "consistent-as-needed"],
     "no-console": [
       "error",
       { "allow": ["clear", "info", "error", "dir", "trace"] }
