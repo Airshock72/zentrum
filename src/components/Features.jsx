@@ -11,7 +11,7 @@ const BentoTilt = ({ children, className = '' }) => {
     const { left, top, width, height } = itemRef.current.getBoundingClientRect()
 
     const relativeX = (e.clientX - left) / width
-    const relativeY = (e.clientY - left) / height
+    const relativeY = (e.clientY - top) / height
 
     const tiltX = (relativeY - 0.5) * 8
     const tiltY = (relativeX - 0.5) * -8
@@ -21,7 +21,7 @@ const BentoTilt = ({ children, className = '' }) => {
     setTransformStyle(newTransform)
   }
 
-  const handleMouseLeave = e => {
+  const handleMouseLeave = () => {
     setTransformStyle('')
   }
   return (
